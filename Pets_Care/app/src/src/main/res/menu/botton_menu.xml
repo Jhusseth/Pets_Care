@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Inicio"
+        android:id="@+id/listado_noticias"
+        android:icon="@drawable/inicio"
+        android:iconTint="@color/colorPrimary"/>
+    <item android:title="Servicio"
+        android:id="@+id/servicios"
+        android:icon="@drawable/servicio"
+        android:iconTint="@color/colorPrimary"
+        />
+    <item android:title="Perfil"
+        android:icon="@drawable/perfil"
+        android:id="@+id/perfil"
+        android:iconTint="@color/colorPrimary"/>
+</menu>

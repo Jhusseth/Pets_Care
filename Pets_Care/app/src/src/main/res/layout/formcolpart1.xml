@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formcolpart1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="696dp"
+                    android:layout_marginStart="33dp"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fondo" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="185dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#00FFFFFF"
+                    android:text="Formulario de creación de colaborador"
+                    android:textSize="18sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <EditText
+                    android:id="@+id/nmaeCol"
+                    android:layout_width="280dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:hint="Nombre completo"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/correoCola"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:hint="Correo electronico"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ccCola" />
+
+                <EditText
+                    android:id="@+id/dateCola"
+                    android:layout_width="280dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:hint="Fecha de nacimiento"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/correoCola" />
+
+                <EditText
+                    android:id="@+id/addresCol"
+                    android:layout_width="280dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:hint="Dirección"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateCola" />
+
+                <EditText
+                    android:id="@+id/phoneCol"
+                    android:layout_width="280dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:hint="Telefono movil"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addresCol" />
+
+                <Button
+                    android:id="@+id/nextFragment"
+                    android:layout_width="161dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="48dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Siguiente"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneCol"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/ccCola"
+                    android:layout_width="280dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:hint="Cc"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nmaeCol" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="151dp"
+                    android:layout_height="101dp"
+                    android:layout_marginTop="36dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/formar" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="347dp"
+                    android:layout_height="626dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#1F673AB7"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
