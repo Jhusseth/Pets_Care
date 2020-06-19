@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.fragment.app.FragmentContainerView
+            android:layout_width="397dp"
+            android:layout_height="662dp"
+            android:id="@+id/coll_fragment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="#6200EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coll_fragment"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageButton
+                android:id="@+id/btn_push_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_weight="1"
+                android:backgroundTint="#6200EE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/feed"/>
+
+        <ImageButton
+                android:id="@+id/btn_coll_stories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#6200EE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/story"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_push_feed"
+                android:layout_marginStart="100dp"
+                app:layout_constraintVertical_bias="0.555"/>
+
+        <ImageButton
+                android:id="@+id/btn_coll_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#6200EE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/extras"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.93"
+                app:layout_constraintStart_toEndOf="@+id/btn_coll_stories"
+                android:layout_marginStart="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

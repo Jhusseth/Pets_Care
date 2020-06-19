@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="Nombre del servicio:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            app:layout_constraintTop_toTopOf="@+id/view8"
+            android:layout_marginTop="26dp"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            android:textColorHighlight="#000000"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/name_upload_service"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+    <TextView
+            android:text="Descripcion del servicio:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/name_upload_service"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            android:textColorHighlight="#000000"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/description_upload_service"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+    <view
+            android:layout_width="360dp"
+            android:layout_height="250dp"
+            class="androidx.appcompat.widget.ActionMenuView"
+            android:id="@+id/view8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"/>
+
+    <ImageView
+            android:layout_width="316dp"
+            android:layout_height="161dp"
+            app:srcCompat="@drawable/fondo"
+            android:id="@+id/coll_image_publi"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="@+id/view9"/>
+
+    <view
+            android:layout_width="361dp"
+            android:layout_height="241dp"
+            class="androidx.appcompat.widget.ActionMenuView"
+            android:id="@+id/view9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/view8"
+            android:background="@drawable/input"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"/>
+
+    <TextView
+            android:text="Añadir foto:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            android:layout_marginTop="10dp"/>
+
+    <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/camera"
+            android:id="@+id/btn_service_upload_image"
+            app:layout_constraintBottom_toBottomOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintVertical_bias="0.949"/>
+
+    <Button
+            android:text="Publicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_public_service"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/button_rounded"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.444"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

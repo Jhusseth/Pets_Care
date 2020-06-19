@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+        <ImageView
+                android:id="@+id/img_service"
+                android:layout_width="342dp"
+                android:layout_height="78dp"
+                app:srcCompat="@drawable/pets"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_service"/>
+
+        <ImageView
+                android:id="@+id/perfil_user"
+                android:layout_width="67dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/user"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="5dp"/>
+
+        <TextView
+                android:id="@+id/description_service"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:text="TextView"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/img_service"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="3dp"/>
+
+        <Button
+                android:id="@+id/btn_see"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Ver"
+                android:background="@drawable/button_rounded"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="36dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_contac"
+                android:layout_marginEnd="41dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/description_service"
+                android:layout_marginBottom="8dp"/>
+
+        <TextView
+                android:id="@+id/title_service"
+                android:layout_width="257dp"
+                android:layout_height="46dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/perfil_user"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintHorizontal_bias="0.0"/>
+
+        <Button
+                android:id="@+id/btn_contac"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Contratar"
+                android:textAlignment="center"
+                android:background="@drawable/button_rounded"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/description_service"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="36dp"
+                app:layout_constraintStart_toEndOf="@+id/btn_see"
+                android:layout_marginStart="41dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
