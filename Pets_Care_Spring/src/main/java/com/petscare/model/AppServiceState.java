@@ -1,5 +1,7 @@
 package com.petscare.model;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 import lombok.Data;
@@ -22,7 +24,7 @@ public class AppServiceState {
     private String description;
 
     @OneToMany(mappedBy = "appServiceState")
-    private AppService service;
+    private List<AppService> service;
 
     private AppServiceState(){
 

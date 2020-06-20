@@ -2,12 +2,14 @@ package com.petscare.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 import com.petscare.model.AppServiceCommentary;
 
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Transactional
 public class CommentaryDaoImp implements CommentaryDao {
 
     @PersistenceContext

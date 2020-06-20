@@ -40,7 +40,7 @@ public class PetscareApplication {
 		usr.setAddress("cr 44 #14a-40 barrio la selva");
 		usr.setDateBorn(LocalDate.of(1998, 11, 18));
 		usr.setPhone("3124283627");
-		usr.setStoryServices(new AppStoryService());
+		//usr.setStoryServices(new AppStoryService());
 
 
 		AppCollaborator coll= new AppCollaborator();
@@ -52,7 +52,7 @@ public class PetscareApplication {
 		coll.setDateBorn(LocalDate.of(1998, 11, 18));
 		coll.setPhone("3124283627");
 		coll.setDescription("amo los animales");
-		coll.setServices(new ArrayList<AppService>());
+		//coll.setServices(new ArrayList<AppService>());
 
 		userService.save(usr);
 		collService.save(coll);

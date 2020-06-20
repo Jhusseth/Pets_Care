@@ -2,11 +2,16 @@ package com.petscare.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 import com.petscare.model.AppUser;
+
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Transactional
+@Scope("singleton")
 public class UserDaoImp implements UserDao {
 
     @PersistenceContext

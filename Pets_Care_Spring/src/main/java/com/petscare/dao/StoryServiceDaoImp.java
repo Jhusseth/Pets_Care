@@ -4,12 +4,14 @@ import java.time.LocalDate;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 import com.petscare.model.AppStoryService;
 
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Transactional
 public class StoryServiceDaoImp implements StoryServiceDao {
 
     @PersistenceContext

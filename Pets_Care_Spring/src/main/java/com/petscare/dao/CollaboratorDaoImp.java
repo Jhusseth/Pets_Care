@@ -2,12 +2,16 @@ package com.petscare.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 import com.petscare.model.AppCollaborator;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Transactional
+@Scope("singleton")
 public class CollaboratorDaoImp implements CollaboratorDao {
 
     @PersistenceContext
