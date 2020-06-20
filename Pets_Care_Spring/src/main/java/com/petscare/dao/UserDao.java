@@ -1,12 +1,13 @@
 package com.petscare.dao;
 
-import com.petscare.model.User;
+import com.petscare.model.AppUser;
+
 public interface UserDao {
 
-    public User save(User user);
-    public User update(User user);
-    public void delete(User user);
-    public User findById(long id);
-    public Iterable<User> findAll();
-    public User findByEmail(String email);
+    public AppUser save(AppUser appUser);
+    public AppUser update(AppUser appUser);
+    public void delete(AppUser appUser);
+    public AppUser findById(long id);
+    public Iterable<AppUser> findAll();
+    public AppUser findByEmail(String email);
 }

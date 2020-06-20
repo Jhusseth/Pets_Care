@@ -1,14 +1,14 @@
 package com.petscare.dao;
 
-import com.petscare.model.Collaborator;
+import com.petscare.model.AppCollaborator;
 
 public interface CollaboratorDao {
 
-    public Collaborator save(Collaborator coll);
-    public Collaborator update(Collaborator coll);
-    public void delete(Collaborator coll);
-    public Collaborator findById(long id);
-    public Iterable<Collaborator> findAll();
-    public Collaborator findByEmail(String email);
+    public AppCollaborator save(AppCollaborator coll);
+    public AppCollaborator update(AppCollaborator coll);
+    public void delete(AppCollaborator coll);
+    public AppCollaborator findById(long id);
+    public Iterable<AppCollaborator> findAll();
+    public AppCollaborator findByEmail(String email);
     
 }

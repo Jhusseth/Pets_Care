@@ -1,7 +1,7 @@
 package com.petscare.services;
 
 import com.petscare.dao.UserDao;
-import com.petscare.model.User;
+import com.petscare.model.AppUser;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,35 +13,35 @@ public class UserServiceImp implements UserService {
     private UserDao userDao;
 
     @Override
-    public User save(User user) {
-        return userDao.save(user);
+    public AppUser save(AppUser appUser) {
+        return userDao.save(appUser);
     }
 
     @Override
-    public User update(User user) {
-        return userDao.update(user);
+    public AppUser update(AppUser appUser) {
+        return userDao.update(appUser);
     }
 
     @Override
     public void delete(long id) {
-        User user = findById(id);
-        if(user!=null){
-            userDao.delete(user);
+        AppUser appUser = findById(id);
+        if(appUser !=null){
+            userDao.delete(appUser);
         }
     }  
 
     @Override
-    public User findById(long id) {
+    public AppUser findById(long id) {
         return userDao.findById(id);
     }
 
     @Override
-    public User findByEmail(String email) {   
+    public AppUser findByEmail(String email) {
         return userDao.findByEmail(email);
     }
 
     @Override
-    public Iterable<User> findAll() {   
+    public Iterable<AppUser> findAll() {
         return userDao.findAll();
     }
 

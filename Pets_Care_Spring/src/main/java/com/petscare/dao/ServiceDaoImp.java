@@ -3,8 +3,8 @@ package com.petscare.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.petscare.model.Collaborator;
-import com.petscare.model.Service;
+import com.petscare.model.AppCollaborator;
+import com.petscare.model.AppService;
 
 import org.springframework.stereotype.Repository;
 
@@ -15,36 +15,36 @@ public class ServiceDaoImp implements ServiceDao {
     private EntityManager entityManager;
 
     @Override
-    public Service save(Service service) {
-        entityManager.persist(service);
-        return service;
+    public AppService save(AppService appService) {
+        entityManager.persist(appService);
+        return appService;
     }
 
     @Override
-    public Service update(Service service) {
-        entityManager.merge(service);
-        return service;
+    public AppService update(AppService appService) {
+        entityManager.merge(appService);
+        return appService;
     }
 
     @Override
-    public void delete(Service service) {
-        entityManager.remove(service);
+    public void delete(AppService appService) {
+        entityManager.remove(appService);
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public Iterable<Service> findAll() {
+    public Iterable<AppService> findAll() {
         return entityManager.createQuery("SELECT * FROM SERVICE").getResultList();
     }
 
     @Override
-    public Service findById(long id) {
-        return entityManager.getReference(Service.class, id);
+    public AppService findById(long id) {
+        return entityManager.getReference(AppService.class, id);
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public Iterable<Service> findByCollaborator(Collaborator coll) {
+    public Iterable<AppService> findByCollaborator(AppCollaborator coll) {
         return  entityManager
                 .createQuery("SELECT Collaborator FROM SERVICE  WHERE collaborator.id = " + coll.getId())
                 .getResultList();

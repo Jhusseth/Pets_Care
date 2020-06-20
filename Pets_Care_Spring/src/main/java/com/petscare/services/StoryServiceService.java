@@ -2,15 +2,15 @@ package com.petscare.services;
 
 import java.time.LocalDate;
 
-import com.petscare.model.StoryService;
+import com.petscare.model.AppStoryService;
 
 public interface StoryServiceService {
 
-    public StoryService save(long id,StoryService storyService);
-    public StoryService update(StoryService storyService);
+    public AppStoryService save(long id, AppStoryService appStoryService);
+    public AppStoryService update(AppStoryService appStoryService);
     public void delete(long id);
-    public StoryService findById(long id);
-    public Iterable<StoryService> findByDate(LocalDate date1,LocalDate date2);
-    public Iterable<StoryService> findAll();
+    public AppStoryService findById(long id);
+    public Iterable<AppStoryService> findByDate(LocalDate date1, LocalDate date2);
+    public Iterable<AppStoryService> findAll();
     
 }

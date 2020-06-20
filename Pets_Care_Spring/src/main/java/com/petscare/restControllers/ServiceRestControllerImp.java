@@ -1,6 +1,6 @@
 package com.petscare.restControllers;
 
-import com.petscare.model.Service;
+import com.petscare.model.AppService;
 import com.petscare.services.ServiceService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +22,14 @@ public class ServiceRestControllerImp implements ServiceRestController {
 
     @Override
     @PostMapping("/{id}/services")
-    public Service save(@PathVariable long id,@RequestBody Service service) {
-        return this.service.save(id, service);
+    public AppService save(@PathVariable long id, @RequestBody AppService appService) {
+        return this.service.save(id, appService);
     }
 
     @Override
     @PutMapping("/services")
-    public Service update(@RequestBody Service service) {
-        return this.service.update(service);
+    public AppService update(@RequestBody AppService appService) {
+        return this.service.update(appService);
     }
 
     @Override
@@ -40,19 +40,19 @@ public class ServiceRestControllerImp implements ServiceRestController {
 
     @Override
     @GetMapping("/services/{id}")
-    public Service findById(@PathVariable long id) {
+    public AppService findById(@PathVariable long id) {
         return this.service.findById(id);
     }
 
     @Override
     @GetMapping("/{id}/services")
-    public Iterable<Service> findByCollaborator(@PathVariable long id) {
+    public Iterable<AppService> findByCollaborator(@PathVariable long id) {
         return this.service.findByCollaborator(id);
     }
 
     @Override
     @GetMapping("/services")
-    public Iterable<Service> findAll() {
+    public Iterable<AppService> findAll() {
         return this.findAll();
     }
     

@@ -1,9 +1,10 @@
 package com.petscare.services;
 
+import com.petscare.model.AppService;
 import org.springframework.stereotype.Service;
 import com.petscare.dao.CollaboratorDao;
 import com.petscare.dao.ServiceDao;
-import com.petscare.model.Collaborator;
+import com.petscare.model.AppCollaborator;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
@@ -16,44 +17,44 @@ public class ServiceServiceImp implements ServiceService {
     private CollaboratorDao coll;
 
     @Override
-    public com.petscare.model.Service save(long id,com.petscare.model.Service service) {
+    public AppService save(long id, AppService appService) {
 
-        Collaborator col = coll.findById(id);
+        AppCollaborator col = coll.findById(id);
         if(col!=null){
-            service.setCollaborator(col);
-            //col.getServices().add(service);
+            appService.setAppCollaborator(col);
+            col.getServices().add(appService);
             coll.update(col);
-            return this.service.save(service);
+            return this.service.save(appService);
         }
 
         return null;
     }
 
     @Override
-    public com.petscare.model.Service update(com.petscare.model.Service service) {
+    public AppService update(AppService appService) {
 
-        if(service!=null){
-            service.setCollaborator(this.service.findById(service.getId()).getCollaborator());     
-            return this.service.update(service);
+        if (appService != null) {
+            appService.setAppCollaborator(this.service.findById(appService.getId()).getAppCollaborator());
+            return this.service.update(appService);
         }
         return null;
     }
 
     @Override
     public void delete(long id) {
-        com.petscare.model.Service ser = this.service.findById(id);
-        ser.setCollaborator(null);
+        AppService ser = this.service.findById(id);
+        ser.setAppCollaborator(null);
         this.service.delete(ser);
     }
 
     @Override
-    public com.petscare.model.Service findById(long id) {
+    public AppService findById(long id) {
         return this.service.findById(id);
     }
 
     @Override
-    public Iterable<com.petscare.model.Service> findByCollaborator(long id) {
-        Collaborator col = coll.findById(id);
+    public Iterable<AppService> findByCollaborator(long id) {
+        AppCollaborator col = coll.findById(id);
         if(col!=null){
             return this.service.findByCollaborator(col);
         }
@@ -62,7 +63,7 @@ public class ServiceServiceImp implements ServiceService {
     }
 
     @Override
-    public Iterable<com.petscare.model.Service> findAll() {
+    public Iterable<AppService> findAll() {
         return this.service.findAll();
     }
     

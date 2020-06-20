@@ -1,6 +1,6 @@
 package com.petscare.restControllers;
 
-import com.petscare.model.User;
+import com.petscare.model.AppUser;
 import com.petscare.services.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +22,14 @@ public class UserRestControllerImp implements UserRestcontroller {
 
     @Override
     @PostMapping("/users")
-    public User save(@RequestBody User user) {
-        return service.save(user);
+    public AppUser save(@RequestBody AppUser appUser) {
+        return service.save(appUser);
     }
 
     @Override
     @PutMapping("/users")
-    public User update(@RequestBody User user) {
-        return service.update(user);
+    public AppUser update(@RequestBody AppUser appUser) {
+        return service.update(appUser);
     }
 
     @Override
@@ -40,19 +40,19 @@ public class UserRestControllerImp implements UserRestcontroller {
 
     @Override
     @GetMapping("/users/{email}")
-    public User findByEmail(@PathVariable String email) {
+    public AppUser findByEmail(@PathVariable String email) {
         return service.findByEmail(email);
     }
 
     @Override
     @GetMapping("/users/{id}")
-    public User findById(@PathVariable long id) {
+    public AppUser findById(@PathVariable long id) {
         return service.findById(id);
     }
 
     @Override
     @GetMapping("/users")
-    public Iterable<User> findByAll() { 
+    public Iterable<AppUser> findByAll() {
         return service.findAll();
     }
 

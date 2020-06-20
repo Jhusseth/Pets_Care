@@ -1,7 +1,7 @@
 package com.petscare.services;
 
 import com.petscare.dao.CollaboratorDao;
-import com.petscare.model.Collaborator;
+import com.petscare.model.AppCollaborator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,35 +13,35 @@ public class CollaboratorServiceImp implements CollaboratorService {
     private CollaboratorDao service;
 
     @Override
-    public Collaborator save(Collaborator coll) {
+    public AppCollaborator save(AppCollaborator coll) {
         return service.save(coll);
     }
 
     @Override
-    public Collaborator update(Collaborator coll) {
+    public AppCollaborator update(AppCollaborator coll) {
         return service.update(coll);
     }
 
     @Override
     public void delete(long id) {
-        Collaborator coll =  service.findById(id);
+        AppCollaborator coll =  service.findById(id);
         if(coll!=null){
             service.delete(coll);
         }
     }
 
     @Override
-    public Collaborator findById(long id) {
+    public AppCollaborator findById(long id) {
         return service.findById(id);
     }
 
     @Override
-    public Collaborator findByEmail(String email) {
+    public AppCollaborator findByEmail(String email) {
         return service.findByEmail(email);
     }
 
     @Override
-    public Iterable<Collaborator> findAll() {
+    public Iterable<AppCollaborator> findAll() {
         return service.findAll();
     }
     

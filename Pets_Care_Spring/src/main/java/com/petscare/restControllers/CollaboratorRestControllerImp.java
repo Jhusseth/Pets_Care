@@ -1,6 +1,6 @@
 package com.petscare.restControllers;
 
-import com.petscare.model.Collaborator;
+import com.petscare.model.AppCollaborator;
 import com.petscare.services.CollaboratorService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,13 +21,13 @@ public class CollaboratorRestControllerImp implements CollaboratorRestController
 
     @Override
     @PostMapping("/collaborators")
-    public Collaborator save(@RequestBody Collaborator coll) {
+    public AppCollaborator save(@RequestBody AppCollaborator coll) {
         return service.save(coll);
     }
 
     @Override
     @PutMapping("/collaborators")
-    public Collaborator update(@RequestBody Collaborator coll) {
+    public AppCollaborator update(@RequestBody AppCollaborator coll) {
         return service.update(coll);
     }
 
@@ -39,19 +39,19 @@ public class CollaboratorRestControllerImp implements CollaboratorRestController
 
     @Override
     @GetMapping("/collaborators/{id}")
-    public Collaborator findById(@PathVariable long id) {
+    public AppCollaborator findById(@PathVariable long id) {
         return service.findById(id);
     }
 
     @Override
     @GetMapping("/collaborators/{email}")
-    public Collaborator findByEmail(@PathVariable String email) {
+    public AppCollaborator findByEmail(@PathVariable String email) {
         return service.findByEmail(email);
     }
 
     @Override
     @GetMapping("/collaborators")
-    public Iterable<Collaborator> findAll() {
+    public Iterable<AppCollaborator> findAll() {
         return service.findAll();
     }
     

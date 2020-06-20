@@ -1,6 +1,6 @@
 package com.petscare.restControllers;
 
-import com.petscare.model.Commentary;
+import com.petscare.model.AppServiceCommentary;
 import com.petscare.services.CommentaryService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +22,13 @@ public class CommentaryRestControllerImp implements CommentaryRestController {
 
     @Override
     @PostMapping("{id}/comments")
-    public Commentary save(@PathVariable long id,@RequestBody Commentary comment) {
+    public AppServiceCommentary save(@PathVariable long id, @RequestBody AppServiceCommentary comment) {
         return service.save(id, comment);
     }
 
     @Override
     @PutMapping("/comments")
-    public Commentary update(@RequestBody Commentary comment) {
+    public AppServiceCommentary update(@RequestBody AppServiceCommentary comment) {
         return service.update(comment);
     }
 
@@ -40,25 +40,25 @@ public class CommentaryRestControllerImp implements CommentaryRestController {
 
     @Override
     @GetMapping("/comments/{id}")
-    public Commentary findById(@PathVariable  long id) {
+    public AppServiceCommentary findById(@PathVariable  long id) {
         return service.findById(id);
     }
 
     @Override
     @GetMapping("/comments/user/{id}")
-    public Iterable<Commentary> findByUser(@PathVariable  long id) {
+    public Iterable<AppServiceCommentary> findByUser(@PathVariable  long id) {
         return service.findByUser(id);
     }
 
     @Override
     @GetMapping("/comments/service/{id}")
-    public Iterable<Commentary> findByService(@PathVariable  long id) {
+    public Iterable<AppServiceCommentary> findByService(@PathVariable  long id) {
         return service.findByService(id);
     }
 
     @Override
     @GetMapping("/comments")
-    public Iterable<Commentary> findAll() {
+    public Iterable<AppServiceCommentary> findAll() {
         return service.findAll();
     }
 }

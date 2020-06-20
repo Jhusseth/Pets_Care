@@ -2,15 +2,15 @@ package com.petscare.dao;
 
 import java.time.LocalDate;
 
-import com.petscare.model.StoryService;
+import com.petscare.model.AppStoryService;
 
 public interface StoryServiceDao {
 
-    public StoryService save (StoryService storyService);
-    public StoryService update (StoryService storyService);
-    public void delete (StoryService storyService);
-    public StoryService findById(long id);
-    public Iterable<StoryService> findByDate(LocalDate date1,LocalDate date2);
-    public Iterable<StoryService> findByAll();
+    public AppStoryService save (AppStoryService appStoryService);
+    public AppStoryService update (AppStoryService appStoryService);
+    public void delete (AppStoryService appStoryService);
+    public AppStoryService findById(long id);
+    public Iterable<AppStoryService> findByDate(LocalDate date1, LocalDate date2);
+    public Iterable<AppStoryService> findByAll();
 
 }

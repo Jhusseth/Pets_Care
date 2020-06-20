@@ -3,7 +3,7 @@ package com.petscare.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.petscare.model.Collaborator;
+import com.petscare.model.AppCollaborator;
 
 import org.springframework.stereotype.Repository;
 
@@ -14,37 +14,37 @@ public class CollaboratorDaoImp implements CollaboratorDao {
     private EntityManager entityManager;
 
     @Override
-    public Collaborator save(Collaborator coll) {
+    public AppCollaborator save(AppCollaborator coll) {
         entityManager.persist(coll);
         return coll;
     }
 
     @Override
-    public Collaborator update(Collaborator coll) {
+    public AppCollaborator update(AppCollaborator coll) {
         entityManager.merge(coll);
         return coll;
     }
 
     @Override
-    public void delete(Collaborator coll) {
+    public void delete(AppCollaborator coll) {
         entityManager.remove(coll);
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public Iterable<Collaborator> findAll() {
+    public Iterable<AppCollaborator> findAll() {
         return entityManager.createQuery("SELECT * FROM COLLABORATOR").getResultList();
     }
 
     @Override
-    public Collaborator findByEmail(String email) {
-        return (Collaborator) entityManager.createQuery("SELECT Email FROM COLLABORATOR WHERE  Email = " + email)
+    public AppCollaborator findByEmail(String email) {
+        return (AppCollaborator) entityManager.createQuery("SELECT Email FROM COLLABORATOR WHERE  Email = " + email)
                 .getSingleResult();
     }
 
     @Override
-    public Collaborator findById(long id) {
-        return entityManager.getReference(Collaborator.class, id);
+    public AppCollaborator findById(long id) {
+        return entityManager.getReference(AppCollaborator.class, id);
     }
 
 

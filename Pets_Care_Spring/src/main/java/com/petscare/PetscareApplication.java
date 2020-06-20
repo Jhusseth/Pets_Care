@@ -3,10 +3,10 @@ package com.petscare;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import com.petscare.model.Collaborator;
-import com.petscare.model.Service;
-import com.petscare.model.StoryService;
-import com.petscare.model.User;
+import com.petscare.model.AppCollaborator;
+import com.petscare.model.AppService;
+import com.petscare.model.AppStoryService;
+import com.petscare.model.AppUser;
 import com.petscare.services.CollaboratorService;
 import com.petscare.services.UserService;
 
@@ -32,7 +32,7 @@ public class PetscareApplication {
 
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		
-		User  usr = new User();
+		AppUser usr = new AppUser();
 		usr.setId((long)1061814203);
 		usr.setName("jhusseth");
 		usr.setEmail("jhussetharias@gmail.com");
@@ -40,10 +40,10 @@ public class PetscareApplication {
 		usr.setAddress("cr 44 #14a-40 barrio la selva");
 		usr.setDateBorn(LocalDate.of(1998, 11, 18));
 		usr.setPhone("3124283627");
-		//usr.setStoryServices(new StoryService());
+		usr.setStoryServices(new AppStoryService());
 
 
-		Collaborator  coll= new Collaborator();
+		AppCollaborator coll= new AppCollaborator();
 		coll.setId((long)1061814203);
 		coll.setName("jhusseth2");
 		coll.setEmail("jhusseth1@hotmail.com");
@@ -52,7 +52,7 @@ public class PetscareApplication {
 		coll.setDateBorn(LocalDate.of(1998, 11, 18));
 		coll.setPhone("3124283627");
 		coll.setDescription("amo los animales");
-		//coll.setServices(new ArrayList<Service>());
+		coll.setServices(new ArrayList<AppService>());
 
 		userService.save(usr);
 		collService.save(coll);

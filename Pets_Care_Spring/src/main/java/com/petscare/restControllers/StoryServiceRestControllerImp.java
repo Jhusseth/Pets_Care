@@ -2,7 +2,7 @@ package com.petscare.restControllers;
 
 import java.time.LocalDate;
 
-import com.petscare.model.StoryService;
+import com.petscare.model.AppStoryService;
 import com.petscare.services.StoryServiceService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,14 +24,14 @@ public class StoryServiceRestControllerImp implements StoryServiceRestController
 
     @Override
     @PostMapping("{id}/record")
-    public StoryService save(@PathVariable long id, @RequestBody StoryService storyService) {
-        return service.save(id, storyService);
+    public AppStoryService save(@PathVariable long id, @RequestBody AppStoryService appStoryService) {
+        return service.save(id, appStoryService);
     }
 
     @Override
     @PutMapping("/record")
-    public StoryService update(@RequestBody StoryService storyService) {
-        return service.update(storyService);
+    public AppStoryService update(@RequestBody AppStoryService appStoryService) {
+        return service.update(appStoryService);
     }
 
     @Override
@@ -42,19 +42,19 @@ public class StoryServiceRestControllerImp implements StoryServiceRestController
 
     @Override
     @GetMapping("/record/{id}")
-    public StoryService findById(@PathVariable long id) {
+    public AppStoryService findById(@PathVariable long id) {
         return service.findById(id);
     }
 
     @Override
     @GetMapping("/record/query")
-    public Iterable<StoryService> findByDate(@PathVariable LocalDate date1, @PathVariable LocalDate date2) {
+    public Iterable<AppStoryService> findByDate(@PathVariable LocalDate date1, @PathVariable LocalDate date2) {
         return service.findByDate(date1, date2);
     }
 
     @Override
     @GetMapping("/record")
-    public Iterable<StoryService> findAll() {
+    public Iterable<AppStoryService> findAll() {
         return service.findAll();
     }
     

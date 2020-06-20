@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.petscare.model.StoryService;
+import com.petscare.model.AppStoryService;
 
 import org.springframework.stereotype.Repository;
 
@@ -16,38 +16,38 @@ public class StoryServiceDaoImp implements StoryServiceDao {
     private EntityManager entityManager;
 
     @Override
-    public StoryService save(StoryService storyService) {
-        entityManager.persist(storyService);
-        return storyService;
+    public AppStoryService save(AppStoryService appStoryService) {
+        entityManager.persist(appStoryService);
+        return appStoryService;
     }
 
     @Override
-    public StoryService update(StoryService storyService) {
-        entityManager.merge(storyService);
-        return storyService;
+    public AppStoryService update(AppStoryService appStoryService) {
+        entityManager.merge(appStoryService);
+        return appStoryService;
     }
 
     @Override
-    public void delete(StoryService storyService) {
-        entityManager.remove(storyService);
+    public void delete(AppStoryService appStoryService) {
+        entityManager.remove(appStoryService);
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public Iterable<StoryService> findByDate(LocalDate date1,LocalDate date2) {
+    public Iterable<AppStoryService> findByDate(LocalDate date1, LocalDate date2) {
         return  entityManager.createQuery("SELECT Date FROM STORY_SERVICE WHERE Date BETWEEN Date>=" + date1 + "AND Date<=" + date2)
                 .getResultList();
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public Iterable<StoryService> findByAll() {
+    public Iterable<AppStoryService> findByAll() {
         return entityManager.createQuery("SELECT * FROM STORY_SERVICE").getResultList();
     }
 
     @Override
-    public StoryService findById(long id) {
-        return entityManager.getReference(StoryService.class, id);
+    public AppStoryService findById(long id) {
+        return entityManager.getReference(AppStoryService.class, id);
     }
 
     

@@ -1,15 +1,15 @@
 package com.petscare.services;
 
-import com.petscare.model.Commentary;
+import com.petscare.model.AppServiceCommentary;
 
 public interface CommentaryService {
 
-    public Commentary save(long id,Commentary comment);
-    public Commentary update(Commentary comment);
+    public AppServiceCommentary save(long id, AppServiceCommentary comment);
+    public AppServiceCommentary update(AppServiceCommentary comment);
     public void delete(long id);
-    public Commentary findById(long id);
-    public Iterable<Commentary> findByUser(long id);
-    public Iterable<Commentary> findByService(long id);
-    public Iterable<Commentary> findAll(); 
+    public AppServiceCommentary findById(long id);
+    public Iterable<AppServiceCommentary> findByUser(long id);
+    public Iterable<AppServiceCommentary> findByService(long id);
+    public Iterable<AppServiceCommentary> findAll();
     
 }

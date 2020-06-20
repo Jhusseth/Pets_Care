@@ -3,8 +3,9 @@ package com.petscare.security;
 
 import com.petscare.dao.CollaboratorDao;
 import com.petscare.dao.UserDao;
-import com.petscare.model.Collaborator;
+import com.petscare.model.AppCollaborator;
 
+import com.petscare.model.AppUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -28,14 +29,14 @@ public class MyCustomUserDetailsService implements UserDetailsService {
 
 		if (admin != null) {
 			User.UserBuilder builder = User.withUsername(email);
-			if(admin.getClass()==com.petscare.model.User.class){
-				com.petscare.model.User usr = (com.petscare.model.User) admin;
+			if(admin.getClass()== AppUser.class){
+				AppUser usr = (AppUser) admin;
 				builder.password(usr.getPassword());
 				builder.roles("user");
 				return builder.build();
 			}
 			else{
-				Collaborator col = (Collaborator) admin;
+				AppCollaborator col = (AppCollaborator) admin;
 				builder.password(col.getPassword());
 				builder.roles("collaborator");
 				return builder.build();
@@ -47,17 +48,17 @@ public class MyCustomUserDetailsService implements UserDetailsService {
 
 	public Object getUser(String email){
 
-		Iterable<com.petscare.model.User> usr = userDao.findAll();
-		Iterable<Collaborator> col = collDao.findAll();
+		Iterable<AppUser> usr = userDao.findAll();
+		Iterable<AppCollaborator> col = collDao.findAll();
 
 		Object n = null;
 
-		for(com.petscare.model.User us :usr){
+		for(AppUser us :usr){
 			if(us.getEmail().equals(email)){
 				n=us;
 			}
 		}
-		for(Collaborator co :col){
+		for(AppCollaborator co :col){
 			if(co.getEmail().equals(email)){
 				n=co;
 			}

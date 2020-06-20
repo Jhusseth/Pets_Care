@@ -3,8 +3,8 @@ package com.petscare.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import com.petscare.model.AppUser;
 import org.springframework.stereotype.Repository;
-import com.petscare.model.User;
 
 @Repository
 public class UserDaoImp implements UserDao {
@@ -13,38 +13,38 @@ public class UserDaoImp implements UserDao {
     private EntityManager entityManager;
 
     @Override
-    public User save(User user) {
-        entityManager.persist(user);
-        return user;
+    public AppUser save(AppUser appUser) {
+        entityManager.persist(appUser);
+        return appUser;
     }
 
     @Override
-    public User update(User user) {
-        entityManager.merge(user);
-        return user;
+    public AppUser update(AppUser appUser) {
+        entityManager.merge(appUser);
+        return appUser;
     }
 
     @Override
-    public void delete(User user) {
-        entityManager.remove(user);
+    public void delete(AppUser appUser) {
+        entityManager.remove(appUser);
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public Iterable<User> findAll() {
-        Iterable<User> query = entityManager.createQuery("SELECT * FROM USERS").getResultList();
+    public Iterable<AppUser> findAll() {
+        Iterable<AppUser> query = entityManager.createQuery("SELECT * FROM USERS").getResultList();
         return query;
     }
 
     @Override
-    public User findByEmail(String email) {
-        User query =  (User) entityManager.createQuery("SELECT Email FROM USER WHERE Email = " + email).getSingleResult();
+    public AppUser findByEmail(String email) {
+        AppUser query =  (AppUser) entityManager.createQuery("SELECT Email FROM USER WHERE Email = " + email).getSingleResult();
         return query;
     }
 
     @Override
-    public User findById(long id) {
-        return entityManager.getReference(User.class, id);
+    public AppUser findById(long id) {
+        return entityManager.getReference(AppUser.class, id);
     }
     
 }

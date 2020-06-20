@@ -1,14 +1,14 @@
 package com.petscare.services;
 
-import com.petscare.model.User;
+import com.petscare.model.AppUser;
 
 public interface UserService {
 
-    public User save(User user);
-    public User update(User user);
+    public AppUser save(AppUser appUser);
+    public AppUser update(AppUser appUser);
     public void delete(long id);
-    public User findById(long id);
-    public User findByEmail(String email);
-    public Iterable<User> findAll();
+    public AppUser findById(long id);
+    public AppUser findByEmail(String email);
+    public Iterable<AppUser> findAll();
  
 }

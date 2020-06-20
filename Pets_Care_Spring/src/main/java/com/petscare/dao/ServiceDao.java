@@ -1,15 +1,15 @@
 package com.petscare.dao;
 
-import com.petscare.model.Collaborator;
-import com.petscare.model.Service;
+import com.petscare.model.AppCollaborator;
+import com.petscare.model.AppService;
 
 public interface ServiceDao {
 
-    public Service save(Service service);
-    public Service update(Service service);
-    public void delete(Service service);
-    public Iterable<Service> findAll();
-    public Service findById(long id);
-    public Iterable<Service> findByCollaborator(Collaborator coll);
+    public AppService save(AppService appService);
+    public AppService update(AppService appService);
+    public void delete(AppService appService);
+    public Iterable<AppService> findAll();
+    public AppService findById(long id);
+    public Iterable<AppService> findByCollaborator(AppCollaborator coll);
     
 }

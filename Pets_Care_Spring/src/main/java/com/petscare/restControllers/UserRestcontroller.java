@@ -1,14 +1,14 @@
 package com.petscare.restControllers;
 
-import com.petscare.model.User;
+import com.petscare.model.AppUser;
 
 public interface UserRestcontroller {
 
-    public User save(User user);
-    public User update(User user);
+    public AppUser save(AppUser appUser);
+    public AppUser update(AppUser appUser);
     public void delete(long id);
-    public User findByEmail(String email);
-    public User findById(long id);
-    public Iterable<User> findByAll();
+    public AppUser findByEmail(String email);
+    public AppUser findById(long id);
+    public Iterable<AppUser> findByAll();
     
 }

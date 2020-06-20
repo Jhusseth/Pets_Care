@@ -1,14 +1,14 @@
 package com.petscare.restControllers;
 
-import com.petscare.model.Collaborator;
+import com.petscare.model.AppCollaborator;
 
 public interface CollaboratorRestController {
 
-    public Collaborator save(Collaborator coll);
-    public Collaborator update (Collaborator coll);
+    public AppCollaborator save(AppCollaborator coll);
+    public AppCollaborator update (AppCollaborator coll);
     public void delete(long id);
-    public Collaborator findById(long id);
-    public Collaborator findByEmail(String email);
-    public Iterable<Collaborator> findAll();
+    public AppCollaborator findById(long id);
+    public AppCollaborator findByEmail(String email);
+    public Iterable<AppCollaborator> findAll();
     
 }
