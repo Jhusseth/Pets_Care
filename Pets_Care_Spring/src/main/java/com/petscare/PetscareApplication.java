@@ -1,11 +1,8 @@
 package com.petscare;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 import com.petscare.model.AppCollaborator;
-import com.petscare.model.AppService;
-import com.petscare.model.AppStoryService;
 import com.petscare.model.AppUser;
 import com.petscare.services.CollaboratorService;
 import com.petscare.services.UserService;
