@@ -1,0 +1,38 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "LoginColl": {
+    "description": "Auto imported from components/LoginColl.vue"
+  },
+  "LazyLoginColl": {
+    "description": "Auto imported from components/LoginColl.vue"
+  },
+  "LoginUser": {
+    "description": "Auto imported from components/LoginUser.vue"
+  },
+  "LazyLoginUser": {
+    "description": "Auto imported from components/LoginUser.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Main": {
+    "description": "Auto imported from components/Main.vue"
+  },
+  "LazyMain": {
+    "description": "Auto imported from components/Main.vue"
+  }
+}
