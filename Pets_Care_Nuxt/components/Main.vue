@@ -1,21 +1,21 @@
 <template>
   <div class= "container-fluid">
       <div class= "d-flex justify-content-center" >
-        <h2> Know our modality of users </h2>
+        <h2> Conoce nuestra modalidad de usuarios </h2>
       </div>
 
-      <div class= " card border-secondary">
+      <div class= " mt-2 card border-secondary">
           <p class="mt-3 mr-5 ml-5 text-justify">
-              Pets are a focus of happiness in our homes and need very
-              special attention in their care, therefore, it is necessary 
-              that they can be cared for with the affection and care they deserve,
-              such as training, walks, meals, games, veterinary and other services
-              that fill the hearts of these loved ones with happiness and health. 
-              Since on some occasions, you do not have the necessary time to be able to
-              offer them the affection and love that they so much deserve, nor with the 
-              availability of personalized services, For this purpose Pets Care is created a 
-              solution that will allow pet owners to have different special services for the 
-              help and care of your pet are immediately available.
+              Las mascotas son un foco de felicidad en nuestros hogares y necesitan
+              especial atención en su cuidado, por lo tanto, es necesario
+              que pueden ser atendidos con el cariño y la atención que merecen,
+              tales como entrenamiento, caminatas, comidas, juegos, veterinaria y otros servicios
+              que llenan los corazones de estos seres queridos con felicidad y salud.
+              Dado que en algunas ocasiones, no tiene el tiempo necesario para poder
+              Ofrecerles el cariño y el amor que tanto se merecen, ni con el
+              disponibilidad de servicios personalizados, para este fin se crea Pets Care
+              solución que permitirá a los dueños de mascotas tener diferentes servicios especiales para
+              La ayuda y el cuidado de su mascota están disponibles de inmediato.
           </p>
       </div>
 
@@ -25,29 +25,29 @@
                 <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Users</h5>
-                    <p class="card-text">
-                        The different users who seek care or services for their pets,
-                        and in order to acquire services in which the users who contract
-                        these care services will be able to purchase a partner who will take
-                        care of their pets with complete confidence. .
+                    <p class="card-text text-justify">
+                        Los diferentes usuarios que buscan atención o servicios para sus mascotas,
+                        y para adquirir servicios en los que los usuarios que contratan
+                        estos servicios de atención podrán comprar un socio que tomará
+                        cuida a sus mascotas con total confianza.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary"> More Information</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img-top">
+                <img src="https://www.nationalgeographic.com.es/medio/2020/02/11/los-beneficios-de-la-interaccion-entre-dueno-y-mascota-van-en-ambas-direcciones-la-mente-de-las-mascotas-tambien-se-favorece-de-los-lazos-estrechos-con-su-dueno_9e2b9dea_1280x720.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Collaborators</h5>
-                    <p class="card-text">
-                        The service providers will give the opportunity to not
-                        only have extra income by having where they can publish
-                        and offer services in which they are suitable for the care
-                        of pets and allowing their services to be known so that they
-                        can create a relationship with users. who acquire their services
+                    <p class="card-text text-justify">
+                        Los proveedores de servicios darán la oportunidad de no
+                        solo tienen ingresos adicionales al tener dónde pueden publicar
+                        y ofrecer servicios en los que sean aptos para el cuidado
+                        de mascotas y permitir que se conozcan sus servicios para que puedan
+                        Puede crear una relación con los usuarios. quienes adquieren sus servicios
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">More Information</a>
                 </div>
             </div>
         </div>    
