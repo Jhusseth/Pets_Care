@@ -18,7 +18,7 @@
   import Main from '../components/Main'
   import Header from '../components/Header'
   import Footer from '../components/Footer'
-  import {store} from '../store/store'
+
   export default {
     name: 'Home',
     components:{
@@ -27,9 +27,7 @@
       Footer
     },
     methods:{
-      upload:function () {
-        store.commit('uploadUsers')
-      }
+      
     }
   }
 </script>

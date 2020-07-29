@@ -56,9 +56,9 @@
 </template>
 
 <script>
-    import {store} from '../store/store'
+
     export default {
-        namme: 'Main'
+        name: 'Main'
     }
 </script>
 

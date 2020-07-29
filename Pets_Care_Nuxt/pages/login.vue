@@ -40,11 +40,11 @@
     import LoginUser from '../components/LoginUser'
     import LoginColl from '../components/LoginColl'
     import HeaderMenu from '../components/HeaderMenu'
-    import {store} from '../store/store'
+
     export default {
         computed: {
             form(){
-               return store.state.rol
+               return this.$store.state.rol
             }
         },
         components:{
@@ -54,10 +54,10 @@
         },
         methods:{
             chargeUser: function (){
-                store.commit('changeRol',true)
+                this.$store.commit('changeRol',true)
             },
             chargeColl: function (){
-                store.commit('changeRol',false)
+                this.$store.commit('changeRol',false)
             }
         }
 
