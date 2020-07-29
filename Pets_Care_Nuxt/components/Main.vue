@@ -3,7 +3,23 @@
       <div class= "d-flex justify-content-center" >
         <h2> Know our modality of users </h2>
       </div>
-      <div class= "row mt-3">
+
+      <div class= "mt-3 mr-5 ml-5">
+          <p class="text-justify">
+              Pets are a focus of happiness in our homes and need very
+              special attention in their care, therefore, it is necessary 
+              that they can be cared for with the affection and care they deserve,
+              such as training, walks, meals, games, veterinary and other services
+              that fill the hearts of these loved ones with happiness and health. 
+              Since on some occasions, you do not have the necessary time to be able to
+              offer them the affection and love that they so much deserve, nor with the 
+              availability of personalized services, For this purpose Pets Care is created a 
+              solution that will allow pet owners to have different special services for the 
+              help and care of your pet are immediately available.
+          </p>
+      </div>
+
+      <div class= "row mt-4">
         <div class= "col">
             <div class="card">
                 <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img-top">
