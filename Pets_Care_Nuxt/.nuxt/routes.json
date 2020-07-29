@@ -1,5 +1,19 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "/home/jhusseth/git/Pets_Care/Pets_Care_Nuxt/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_42aefaf7"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/home/jhusseth/git/Pets_Care/Pets_Care_Nuxt/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_5558ed8a"
+  },
+  {
     "name": "login",
     "path": "/login",
     "component": "/home/jhusseth/git/Pets_Care/Pets_Care_Nuxt/pages/login.vue",

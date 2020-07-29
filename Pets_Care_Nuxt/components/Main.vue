@@ -4,8 +4,8 @@
         <h2> Know our modality of users </h2>
       </div>
 
-      <div class= "mt-3 mr-5 ml-5">
-          <p class="text-justify">
+      <div class= " card border-secondary">
+          <p class="mt-3 mr-5 ml-5 text-justify">
               Pets are a focus of happiness in our homes and need very
               special attention in their care, therefore, it is necessary 
               that they can be cared for with the affection and care they deserve,
@@ -25,7 +25,12 @@
                 <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Users</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">
+                        The different users who seek care or services for their pets,
+                        and in order to acquire services in which the users who contract
+                        these care services will be able to purchase a partner who will take
+                        care of their pets with complete confidence. .
+                    </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
@@ -35,7 +40,13 @@
                 <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Collaborators</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">
+                        The service providers will give the opportunity to not
+                        only have extra income by having where they can publish
+                        and offer services in which they are suitable for the care
+                        of pets and allowing their services to be known so that they
+                        can create a relationship with users. who acquire their services
+                    </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
