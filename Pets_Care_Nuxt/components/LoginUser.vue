@@ -1,9 +1,6 @@
 <template>
-  <div class ="d-flex justify-content-center container-fluid mt-5">
+  <div class ="d-flex justify-content-center container mt-3">
     <form>
-      <div class="d-flex justify-content-center mb-5">
-         <h4 for="rol">** Logging in as user **</h4>
-      </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -17,7 +14,7 @@
       <div class="d-flex justify-content-center mt-5">
         <a href="/registerUser" class="badge badge-light">¿You do not have an account?</a>
       </div>
-      <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-3 mb-3">
         <button type="submit" class="btn btn-primary"> Log in</button>
       </div>
     </form>

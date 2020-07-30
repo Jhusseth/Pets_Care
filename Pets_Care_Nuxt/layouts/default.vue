@@ -1,8 +1,11 @@
 <template>
-  <div class = "container-fluid">
+  <div>
     <Nuxt />
   </div>
 </template>
 
-<style>
+<style scoped>
+div{
+    background-image:url("../assets/background3.jpg");
+}
 </style>

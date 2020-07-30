@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class = "container">
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">PETSCARE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,6 +23,14 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.navbar{
+    background-color: rgba(255,256,255,0.50);
+}
+.navbar-brand{
+    color:black
+}
+.nav-link{
+    color:black
+}
 </style>

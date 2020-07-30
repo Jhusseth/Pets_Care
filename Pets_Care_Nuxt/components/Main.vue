@@ -1,5 +1,5 @@
 <template>
-  <div class= "container-fluid">
+  <div id= "all" class= "container">
       <div class= "d-flex justify-content-center" >
         <h2> Conoce nuestra modalidad de usuarios </h2>
       </div>
@@ -24,14 +24,14 @@
             <div class="card">
                 <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Users</h5>
+                    <h5 class="card-title">Usuarios</h5>
                     <p class="card-text text-justify">
                         Los diferentes usuarios que buscan atención o servicios para sus mascotas,
                         y para adquirir servicios en los que los usuarios que contratan
                         estos servicios de atención podrán comprar un socio que tomará
                         cuida a sus mascotas con total confianza.
                     </p>
-                    <a href="#" class="btn btn-primary"> More Information</a>
+                    <a href="#" class="btn btn-primary">Más Información</a>
                 </div>
             </div>
         </div>
@@ -39,15 +39,15 @@
             <div class="card">
                 <img src="https://www.nationalgeographic.com.es/medio/2020/02/11/los-beneficios-de-la-interaccion-entre-dueno-y-mascota-van-en-ambas-direcciones-la-mente-de-las-mascotas-tambien-se-favorece-de-los-lazos-estrechos-con-su-dueno_9e2b9dea_1280x720.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Collaborators</h5>
+                    <h5 class="card-title">Colaboradores</h5>
                     <p class="card-text text-justify">
-                        Los proveedores de servicios darán la oportunidad de no
-                        solo tienen ingresos adicionales al tener dónde pueden publicar
+                        Los proveedores de servicios darán la oportunidad de tener 
+                        ingresos adicionales dado que pueden públicar
                         y ofrecer servicios en los que sean aptos para el cuidado
-                        de mascotas y permitir que se conozcan sus servicios para que puedan
-                        Puede crear una relación con los usuarios. quienes adquieren sus servicios
+                        de mascotas y permitir que se le conozcan sus servicios para que puedan
+                        crear una relación con los usuarios quienes adquieren servicios.
                     </p>
-                    <a href="#" class="btn btn-primary">More Information</a>
+                    <a href="#" class="btn btn-primary">Más Información</a>
                 </div>
             </div>
         </div>    
@@ -62,6 +62,6 @@
     }
 </script>
 
-<style>
+<style scoped>
 
 </style>
