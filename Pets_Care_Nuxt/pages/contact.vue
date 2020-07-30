@@ -1,6 +1,8 @@
 <template>
-  <div>
-      <HeaderMenu/>
+  <div class= "rows">
+        <div class= "row">
+            <HeaderMenu/>
+        </div>
       <div class= "mt-5 d-flex justify-content-center">
           <h2> Developing ... </h2>
       </div>
