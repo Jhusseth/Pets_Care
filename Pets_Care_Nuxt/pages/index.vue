@@ -4,7 +4,7 @@
       <div class="row">
         <Header/>
       </div>
-      <div class= "mt-3">
+      <div class= "row">
         <Main/>
       </div>
       <div class="row"> 

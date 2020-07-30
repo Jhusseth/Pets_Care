@@ -4,38 +4,38 @@
             <HeaderMenu/>
         </div>
         <div class= "rows">
-        <div class= "row mt-3">
-            <div class= "col-7 ml-5">
-                <div class="card ml-5">
-                    <img src="https://education.health.ufl.edu/files/2014/05/pet-sitting-pg.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class= "row mt-3 ">
+                <div class= "col-7 ml-5">
+                    <div class="card ml-5 shadow rounded">
+                        <img src="https://education.health.ufl.edu/files/2014/05/pet-sitting-pg.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class= "col-4 mt-5">
-                <div class= "d-flex justify-content-center">
-                    <div class= "row d-flex justify-content-center">
-                        <div class= "d-flex justify-content-center">
-                            <div v-if="form" >
-                                <a href="#" class="badge badge-primary" v-on:click="chargeUser">login how user</a>
-                                <a href="#" class="badge badge-secondary" v-on:click="chargeColl">login how coll </a> 
+                <div class= "col-4 mt-5">
+                    <div class= "d-flex justify-content-center">
+                        <div class= "row d-flex justify-content-center">
+                            <div class= "d-flex justify-content-center">
+                                <div v-if="form" >
+                                    <a href="#" class="badge badge-primary" v-on:click="chargeUser">login how user</a>
+                                    <a href="#" class="badge badge-secondary" v-on:click="chargeColl">login how coll </a> 
+                                </div>
+                                <div v-else >
+                                    <a href="#" class="badge badge-secondary" v-on:click="chargeUser">login how user</a>
+                                    <a href="#" class="badge badge-primary" v-on:click="chargeColl">login how coll </a> 
+                                </div>
                             </div>
-                            <div v-else >
-                                <a href="#" class="badge badge-secondary" v-on:click="chargeUser">login how user</a>
-                                <a href="#" class="badge badge-primary" v-on:click="chargeColl">login how coll </a> 
+                            <div v-if="form" class="user mt-5 shadow rounded">
+                                <LoginUser/>
                             </div>
-                        </div>
-                        <div v-if="form" class="user mt-5">
-                            <LoginUser/>
-                        </div>
-                        <div v-else class="coll mt-5">
-                            <LoginColl/>
-                        </div>
-                    </div>   
-                </div>    
+                            <div v-else class="coll mt-5 shadow rounded">
+                                <LoginColl/>
+                            </div>
+                        </div>   
+                    </div>    
+                </div>
             </div>
-        </div>
         </div>
   </div>
 </template>
