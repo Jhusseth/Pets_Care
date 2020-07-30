@@ -21,6 +21,20 @@
     "_name": "_2c0e78d3"
   },
   {
+    "name": "registerColl",
+    "path": "/registerColl",
+    "component": "/home/jhusseth/git/Pets_Care/Pets_Care_Nuxt/pages/registerColl.vue",
+    "chunkName": "pages/registerColl",
+    "_name": "_f782d096"
+  },
+  {
+    "name": "registerUser",
+    "path": "/registerUser",
+    "component": "/home/jhusseth/git/Pets_Care/Pets_Care_Nuxt/pages/registerUser.vue",
+    "chunkName": "pages/registerUser",
+    "_name": "_cbe165d8"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/jhusseth/git/Pets_Care/Pets_Care_Nuxt/pages/index.vue",

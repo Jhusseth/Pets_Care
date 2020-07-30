@@ -17,6 +17,12 @@
   "LazyHeaderMenu": {
     "description": "Auto imported from components/HeaderMenu.vue"
   },
+  "HeaderRegister": {
+    "description": "Auto imported from components/HeaderRegister.vue"
+  },
+  "LazyHeaderRegister": {
+    "description": "Auto imported from components/HeaderRegister.vue"
+  },
   "LoginColl": {
     "description": "Auto imported from components/LoginColl.vue"
   },
