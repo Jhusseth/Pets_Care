@@ -17,8 +17,5 @@ export default {
 </script>
 
 <style scoped>
-/* .rows{
-    background:silver;
-} */
 
 </style>

@@ -5,7 +5,7 @@
         </div>
         <div class= "d-flex justify-content-center mt-4">
             <form>
-                <div class="row">
+                <div class=" form-r row shadow rounded">
                     <div class="col mt-2 mb-3">
                         <label for="exampleInputEmail1">Cédula</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -31,7 +31,7 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                 </div>
-                <div class= "row d-flex justify-content-center mb-3">
+                <div class= "row form-d d-flex justify-content-center mb-3">
                     <div class= "d-flex justify-content-center mt-3">
                     <label for="exampleInputEmail1">Descripción</label>
                     </div>
@@ -57,6 +57,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.form-r{
+    background-color: rgba(0,0,0,0.20);
+}
+.form-d{
+    background: #21252924;
+}
 
 </style>
