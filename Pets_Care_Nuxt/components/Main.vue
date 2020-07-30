@@ -1,7 +1,7 @@
 <template>
     <div id= "all" class= "container mt-4">
-        <div class= "d-flex justify-content-center mb-3" >
-            <h2> Conoce nuestra modalidad de usuarios </h2>
+        <div class= "d-flex justify-content-center mt-2 mb-3" >
+            <h2> Pets Care </h2>
         </div>
 
         <div class= " mt-2 card border-success shadow bg-white rounded">
@@ -18,8 +18,10 @@
                 La ayuda y el cuidado de su mascota están disponibles de inmediato.
             </p>
         </div>
-
-        <div class="mt-5 ">
+        <div class= "d-flex justify-content-center mt-5" >
+            <h2 class= "mt-3"> ¡Conoce nuestra modalidad de usuarios! </h2>
+        </div>
+        <div class="mt-4 ">
             <div class="card mb-3 mr-auto shadow bg-white rounded">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -39,7 +41,7 @@
                     </div>
                 </div>
             </div>   
-            <div class="card mb-3 ml-auto shadow bg-white rounded">
+            <div class="card mb-3 mr-auto shadow bg-white rounded">
                 <div class="row no-gutters">
                     <div class="col-md-8">
                         <div class="card-body">
