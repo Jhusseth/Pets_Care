@@ -1,18 +1,12 @@
 <template>
-  <div id="footer" class="container mt-5 shadow rounded mb-2  ">
-    <div class="rows ">
-      <div class="row">
-        <div class= "col d-flex justify-content-center">
-          <h1> footer </h1>
-        </div>
-        <div class= "col d-flex justify-content-center">
-          <h1> footer </h1>
-        </div>
-        <div class= "col d-flex justify-content-center">
-          <h1> footer </h1>
-        </div>
+  <div class="container mt-5">
+    <div class="card text-center shadow-sm rounded">
+      <div class="card-body shadow-sm rounded">
       </div>
-    </div>  
+      <div class=" footer shadow rounded">
+         ©Titancorp
+      </div>
+    </div>
   </div>
 </template>
 
@@ -23,10 +17,12 @@ export default {
 </script>
 
 <style scoped>
-.container{
-  background-color: rgba(255,256,255,0.50);
+.card{
+  background-color: rgba(255,255,255,0.50);
+  color:black;
 }
-h1{
-  color: black;
+.footer{
+  background-color: rgba(255,255,255,0.70);
+  color:black;
 }
 </style>
