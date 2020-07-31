@@ -7,28 +7,36 @@
             <form>
                 <div class=" form-r row shadow rounded">
                     <div class="col mt-2 mb-3">
-                        <label for="exampleInputEmail1">Cédula</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Apellidos</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Contraseña</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Ciudad</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Teléfono</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="identification">Cédula</label>
+                        <input type="number" class="form-control" id="identification" aria-describedby="idHelp">
+
+                        <label for="lastName">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp">
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
+
+                        <label for="City">Ciudad</label>
+                        <input type="text" class="form-control" id="city" aria-describedby="cityHelp">
+
+                        <label for="phone">Teléfono</label>
+                        <input type="number" class="form-control" id="phone" aria-describedby="phoneHelp">
                     </div>
                     <div class="col mb-3 mt-2">
-                        <label for="exampleInputEmail1">Nombres</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Correo</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Departamento</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Dirección</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1">Celular</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="name">Nombres</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+
+                        <label for="email">Correo</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+                        <label for="department">Departamento</label>
+                        <input type="text" class="form-control" id="department" aria-describedby="departmentHelp">
+
+                        <label for="address">Dirección</label>
+                        <input type="text" class="form-control" id="address" aria-describedby="addressHelp">
+
+                        <label for="celphone">Celular</label>
+                        <input type="number" class="form-control" id="celphone" aria-describedby="celphoneHelp">
                     </div>
                 </div>
                 <div class= "row form-d d-flex justify-content-center mb-3">

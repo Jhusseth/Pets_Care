@@ -1,6 +1,8 @@
 <template>
     <div>
-        <Register/>
+        <div class="container">
+            <Register/>
+        </div>
         <div class= "d-flex justify-content-center mt-3">
             <button type="submit" class="btn btn-primary">Registrar</button>
         </div>
