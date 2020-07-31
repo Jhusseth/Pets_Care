@@ -20,6 +20,6 @@ export default {
 <style scoped>
 .app{
   background-image:url("../assets/background3.jpg");
-  flex:0%;
+  flex:100%;
 }
 </style>

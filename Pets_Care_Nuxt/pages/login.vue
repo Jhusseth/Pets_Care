@@ -3,16 +3,16 @@
         <div class= "row">
             <HeaderMenu/>
         </div>
-        <div class= "rows ml-5">
+        <div class= "rows">
             <div class= "row mt-3">
-                <div class= " frame col-md-7 mt-5 ml-5 shadow rounded">
-                    <div class= "row">
+                <div class= " frame col-md-6 mt-5 container shadow rounded">
+                    <div class= "row d-flex justify-content-center d-flex justify-content-center">
                         <div class= "col-md-5 mt-3">
-                            <div class="ml-5">
+                            <div>
                                 <img src="https://t1.ea.ltmcdn.com/es/images/5/7/7/img_guia_completa_de_cuidados_de_un_perro_anciano_7775_600_square.jpg" class="card-img-top rounded-circle" alt="...">
                             </div>
                         </div>
-                        <div class= "frame-title col-md-6 ml-3 mt-5 shadow rounded">
+                        <div class= "frame-title  container col-md-6 ml-3 mt-5 shadow rounded">
                             <div class="card-body mt-4">
                                 <p class="card-text text-justify align-middle">
                                     ¡Todas las mascotas tienen cuidados distintos, dependiendo del tipo de animal que sea y de su raza!
@@ -20,7 +20,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class= "row  mt-4">
+                    <div class= "row  mt-5">
                         <p class="card-text text-justify align-middle mr-4 ml-4">    
                             Ya sea un perro, gato, iguana, hamster o peces, cada uno necesita distintas atenciones, por eso es bueno siempre consultar con un veterinario.
                             Frecuentemente, los animales son mantenidos como compañeros domésticos.
