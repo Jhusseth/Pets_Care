@@ -41,12 +41,12 @@
                 </div>
                 <div class= "row form-d d-flex justify-content-center mb-3">
                     <div class= "d-flex justify-content-center mt-3">
-                    <label for="exampleInputEmail1">Descripción</label>
+                    <label for="description">Descripción</label>
                     </div>
                     <textarea 
                         name = "Decription" 
                         class="form-control ml-3 mr-3 mb-3"
-                        id="exampleInputEmail1" 
+                        id="description" 
                         rows="2">
                     </textarea>
                 </div>    
