@@ -6,10 +6,7 @@
       </div>
       <div class= "row">
         <Main/>
-      </div>
-      <div class="row"> 
-        <Footer/>
-      </div>  
+      </div> 
     </div>
   </div>
 </template>
@@ -17,14 +14,12 @@
 <script>
   import Main from '../components/Main'
   import Header from '../components/Header'
-  import Footer from '../components/Footer'
 
   export default {
     name: 'Home',
     components:{
       Header,
-      Main,
-      Footer
+      Main
     },
     methods:{
 

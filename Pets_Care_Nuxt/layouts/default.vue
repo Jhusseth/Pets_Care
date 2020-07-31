@@ -1,11 +1,25 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class= "app">
+    <Nuxt />  
+    <footer>
+      <Footer/>
+    </footer>
   </div>
 </template>
 
+
+<script>
+import Footer from '../components/Footer' 
+export default {
+  comments:{
+    Footer
+  }
+}
+</script>
+
 <style scoped>
-div{
-    background-image:url("../assets/background3.jpg");
+.app{
+  background-image:url("../assets/background3.jpg");
+  flex:0%;
 }
 </style>
