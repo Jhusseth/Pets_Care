@@ -25,7 +25,7 @@
             <div class="card mb-3 mr-auto shadow bg-white rounded">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img">
+                        <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/mascotas-saludables-y-felices.jpg" class="card-img rounded-left">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img src="https://www.nationalgeographic.com.es/medio/2020/02/11/los-beneficios-de-la-interaccion-entre-dueno-y-mascota-van-en-ambas-direcciones-la-mente-de-las-mascotas-tambien-se-favorece-de-los-lazos-estrechos-con-su-dueno_9e2b9dea_1280x720.jpg" class="card-img">
+                        <img src="https://www.nationalgeographic.com.es/medio/2020/02/11/los-beneficios-de-la-interaccion-entre-dueno-y-mascota-van-en-ambas-direcciones-la-mente-de-las-mascotas-tambien-se-favorece-de-los-lazos-estrechos-con-su-dueno_9e2b9dea_1280x720.jpg" class="card-img rounded-right">
                     </div>
                 </div>
             </div>

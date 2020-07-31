@@ -1,6 +1,6 @@
 <template>
-  <div class ="d-flex justify-content-center container mt-3">
-    <form>
+  <div class ="d-flex justify-content-center container">
+    <form class = "mt-4">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

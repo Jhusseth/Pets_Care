@@ -60,10 +60,12 @@ export default {
 <style scoped>
 
 .form-r{
-    background-color: rgba(0,0,0,0.20);
+    background-color: rgba(255,255,255,0.20);
+    color:black;
 }
 .form-d{
-    background: #21252924;
+    background-color: rgba(255,255,255,0.15);
+    color:black;
 }
 
 </style>
