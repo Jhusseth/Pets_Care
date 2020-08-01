@@ -1,5 +1,5 @@
 <template>
-    <div class= "rows">
+    <div class= "rows mb-5">
         <div>
             <HeaderMenu/>
         </div>
