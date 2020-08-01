@@ -32,11 +32,12 @@ export default new Vuetify({
       },
     },
     icons:{
-      iconfont:'fa',
-      values:{
-        itheme:'fas fa-moon'
-      }
+      // iconfont:'fa',
+      val:[{
+        facebook:'mdi-facebook'
+        }
+      ]
     },
-    // customProperties:false,
+    customProperties:false,
     // iconfont:'md'
 });

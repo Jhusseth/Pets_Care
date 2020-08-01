@@ -1,33 +1,51 @@
 <template>
-  <footer>
-    <div class="card text-center shadow-sm rounded">
-      <div class="card-body shadow-sm rounded">
-      </div>
-      <div class=" footer shadow rounded">
-         ©Titancorp
-      </div>
-    </div>
-  </footer>
+  <v-footer
+    dark
+    padless
+  >
+    <v-card
+      class="flex"
+      flat
+      tile
+    >
+      <v-card-title class=" py-0 primary">
+        <strong class="subheading"> !Contactanos atravez de  nuestras redes sociales¡ </strong>
+
+        <v-spacer></v-spacer>
+
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          class="mx-4"
+          dark
+          icon
+        >
+          <v-icon size="24px">{{ icon }}</v-icon>
+        </v-btn>
+      </v-card-title>
+
+      <v-card-text class="py-0 white--text text-center">
+        ©{{ new Date().getFullYear() }} — <strong>Titancorp</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
 </template>
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    data: () => ({
+      icons: [
+        'mdi-whatsapp',
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-linkedin',
+        'mdi-instagram',
+      ],
+    }),
 }
 </script>
 
 <style scoped>
-.card{
-  background-color: rgba(255,255,255,0.50);
-  color:black;
-}
-.footer{
-  background-color: rgba(255,255,255,0.70);
-  color:black;
-}
 
-footer{
-  width: 100%;
-  position:static;
-}
 </style>

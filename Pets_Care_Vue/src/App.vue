@@ -3,9 +3,9 @@
     <v-content app>
       <router-view/>
     </v-content>
-    <div app style="padding-top:10%">
+    <v-footer app>
       <Footer/>
-    </div>
+    </v-footer>
   </v-app>
 </template>
 
